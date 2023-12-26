@@ -1,13 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-const parent= React.createElement("div",{},
-[React.createElement("div",{},React.createElement("h1",{},"I am a h1 tag")),
-React.createElement("div",{},React.createElement("h1",{},"Hello am a h2 tag"))
-
-]
-
-)
-
+const Tilte=()=><h1>This is Namaste React</h1>
+const HeadingComponent=()=>{
+    return(
+        <div>
+            <Tilte/>
+            <h1>Welcome Again</h1>
+        </div>
+    )
+}
 const root =ReactDOM.createRoot(document.getElementById("root"))
-root.render(parent)
+root.render(<HeadingComponent/>)

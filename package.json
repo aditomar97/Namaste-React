@@ -4,6 +4,8 @@
   "description": "\"React course\"",
 
   "scripts": {
+    "start": "npx parcel index.html",
+    "build":"npx parcel build index.html",
     "test": "jest"
   },
   "repository": {
