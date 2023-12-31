@@ -48,6 +48,48 @@
 }
 
 .filter-btn{
-margin: 10px;
+margin-left: 10px;
 cursor: pointer;
+border: 1px solid rgb(242, 179, 64);
+border-radius: 10px;
+background-color: rgb(241, 179, 64);
+font-weight: bold;
+cursor: pointer;
+}
+
+.shimmer-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-card{
+  margin: 20px;
+  width: 200px;
+  height: 400px;
+  background-color: lightgray;
+}
+
+.login{
+  padding: auto;
+  border: 1px solid aquamarine;
+  border-radius: 25%;
+  height: 50px;
+  width: 75px;
+  background-color: aquamarine;
+  box-shadow:1px 1px 5px 3px aquamarine ;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.filter{
+  margin: 10px;
+  display: flex;
+}
+.search-btn{
+  margin-left:10px ;
+  border: 1px solid rgb(242, 179, 64);
+  border-radius: 10px;
+  background-color: rgb(241, 179, 64);
+  font-weight: bold;
+  cursor: pointer;
 }

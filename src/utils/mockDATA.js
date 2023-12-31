@@ -1,4 +1,100 @@
-export const reslist=[{
+export const reslist=[
+  {
+    "info": {
+      "id": "719590",
+      "name": "Chai Sutta Yaari",
+      "cloudinaryImageId": "7953390cdc0e565013d3bc6fcc48bd9d",
+      "locality": "Zenith Public School",
+      "areaName": "Murari Nagar",
+      "costForTwo": "₹200 for two",
+      "cuisines": [
+        "North Indian",
+        "Fast Food",
+        "Pizzas",
+        "Beverages"
+      ],
+      "avgRating": 4.3,
+      "parentId": "57171",
+      "avgRatingString": "4.3",
+      "totalRatingsString": "50+",
+      "sla": {
+        "deliveryTime": 45,
+        "lastMileTravel": 6.3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "45 mins",
+        "lastMileTravelString": "6.3 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-30 22:00:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "aggregatedDiscountInfoV2": {
+        
+      },
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "orderabilityCommunication": {
+        "title": {
+          
+        },
+        "subTitle": {
+          
+        },
+        "message": {
+          
+        },
+        "customIcon": {
+          
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      "context": "seo-data-9fd5af20-fa62-4cc5-808d-b673caa96871"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/chai-sutta-yaari-zenith-public-school-murari-nagar-khujra-719590",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
     "info": {
       "id": "758905",
       "name": "Om Restaurant",
@@ -16,15 +112,15 @@ export const reslist=[{
       "avgRatingString": "3.2",
       "totalRatingsString": "3",
       "sla": {
-        "deliveryTime": 49,
+        "deliveryTime": 52,
         "lastMileTravel": 9,
         "serviceability": "SERVICEABLE",
-        "slaString": "49 mins",
+        "slaString": "52 mins",
         "lastMileTravelString": "9.0 km",
         "iconType": "ICON_TYPE_EMPTY"
       },
       "availability": {
-        "nextCloseTime": "2023-12-28 22:00:00",
+        "nextCloseTime": "2023-12-30 22:00:00",
         "opened": true
       },
       "badges": {
@@ -84,7 +180,7 @@ export const reslist=[{
       }
     },
     "analytics": {
-      "context": "seo-data-994883d4-c33f-4e3d-b097-eb81b6f998e9"
+      "context": "seo-data-9fd5af20-fa62-4cc5-808d-b673caa96871"
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/om-restaurant-gandhi-road-murari-nagar-khujra-758905",
@@ -110,15 +206,15 @@ export const reslist=[{
       "avgRatingString": "4.8",
       "totalRatingsString": "3",
       "sla": {
-        "deliveryTime": 51,
+        "deliveryTime": 54,
         "lastMileTravel": 8.3,
         "serviceability": "SERVICEABLE",
-        "slaString": "51 mins",
+        "slaString": "54 mins",
         "lastMileTravelString": "8.3 km",
         "iconType": "ICON_TYPE_EMPTY"
       },
       "availability": {
-        "nextCloseTime": "2023-12-28 22:00:00",
+        "nextCloseTime": "2023-12-30 22:00:00",
         "opened": true
       },
       "badges": {
@@ -178,7 +274,7 @@ export const reslist=[{
       }
     },
     "analytics": {
-      "context": "seo-data-994883d4-c33f-4e3d-b097-eb81b6f998e9"
+      "context": "seo-data-9fd5af20-fa62-4cc5-808d-b673caa96871"
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/pizza-club-jayka-restaurant-murari-nagar-khujra-753043",
@@ -201,19 +297,21 @@ export const reslist=[{
         "Fast Food",
         "Snacks"
       ],
+      "avgRating": 3.6,
       "veg": true,
       "parentId": "15478",
-      "avgRatingString": "NEW",
+      "avgRatingString": "3.6",
+      "totalRatingsString": "3",
       "sla": {
-        "deliveryTime": 56,
+        "deliveryTime": 67,
         "lastMileTravel": 8.3,
         "serviceability": "SERVICEABLE",
-        "slaString": "56 mins",
+        "slaString": "67 mins",
         "lastMileTravelString": "8.3 km",
         "iconType": "ICON_TYPE_EMPTY"
       },
       "availability": {
-        "nextCloseTime": "2023-12-28 21:00:00",
+        "nextCloseTime": "2023-12-30 21:00:00",
         "opened": true
       },
       "badges": {
@@ -274,7 +372,7 @@ export const reslist=[{
       }
     },
     "analytics": {
-      "context": "seo-data-994883d4-c33f-4e3d-b097-eb81b6f998e9"
+      "context": "seo-data-9fd5af20-fa62-4cc5-808d-b673caa96871"
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/the-pizza-express-tilak-park-murari-nagar-khujra-753090",
@@ -285,30 +383,28 @@ export const reslist=[{
   },
   {
     "info": {
-      "id": "753069",
-      "name": "Burger Club",
+      "id": "752536",
+      "name": "Dev Fast Food",
       "cloudinaryImageId": "1ee43c51aca0582a1e951d722bbae644",
-      "locality": "Hanuman Complax",
+      "locality": "Jhamka Chauraha Pahasu Road",
       "areaName": "Murari Nagar",
-      "costForTwo": "₹200 for two",
+      "costForTwo": "₹250 for two",
       "cuisines": [
         "Burgers"
       ],
-      "avgRating": 3.8,
       "veg": true,
-      "parentId": "51256",
-      "avgRatingString": "3.8",
-      "totalRatingsString": "3",
+      "parentId": "71547",
+      "avgRatingString": "NEW",
       "sla": {
-        "deliveryTime": 51,
-        "lastMileTravel": 8.3,
+        "deliveryTime": 54,
+        "lastMileTravel": 9.2,
         "serviceability": "SERVICEABLE",
-        "slaString": "51 mins",
-        "lastMileTravelString": "8.3 km",
+        "slaString": "54 mins",
+        "lastMileTravelString": "9.2 km",
         "iconType": "ICON_TYPE_EMPTY"
       },
       "availability": {
-        "nextCloseTime": "2023-12-28 22:00:00",
+        "nextCloseTime": "2023-12-30 21:30:00",
         "opened": true
       },
       "badges": {
@@ -368,10 +464,10 @@ export const reslist=[{
       }
     },
     "analytics": {
-      "context": "seo-data-994883d4-c33f-4e3d-b097-eb81b6f998e9"
+      "context": "seo-data-9fd5af20-fa62-4cc5-808d-b673caa96871"
     },
     "cta": {
-      "link": "https://www.swiggy.com/restaurants/burger-club-hanuman-complax-murari-nagar-khujra-753069",
+      "link": "https://www.swiggy.com/restaurants/dev-fast-food-jhamka-chauraha-pahasu-road-murari-nagar-khujra-752536",
       "text": "RESTAURANT_MENU",
       "type": "WEBLINK"
     },
@@ -395,15 +491,15 @@ export const reslist=[{
       "avgRatingString": "4.8",
       "totalRatingsString": "50+",
       "sla": {
-        "deliveryTime": 41,
+        "deliveryTime": 43,
         "lastMileTravel": 9.1,
         "serviceability": "SERVICEABLE",
-        "slaString": "41 mins",
+        "slaString": "43 mins",
         "lastMileTravelString": "9.1 km",
         "iconType": "ICON_TYPE_EMPTY"
       },
       "availability": {
-        "nextCloseTime": "2023-12-28 22:00:00",
+        "nextCloseTime": "2023-12-30 22:00:00",
         "opened": true
       },
       "badges": {
@@ -463,10 +559,104 @@ export const reslist=[{
       }
     },
     "analytics": {
-      "context": "seo-data-994883d4-c33f-4e3d-b097-eb81b6f998e9"
+      "context": "seo-data-9fd5af20-fa62-4cc5-808d-b673caa96871"
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/khurjawasi-gopi-krishan-vihar-murari-nagar-khujra-753129",
+      "text": "RESTAURANT_MENU",
+      "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+  },
+  {
+    "info": {
+      "id": "753069",
+      "name": "Burger Club",
+      "cloudinaryImageId": "1ee43c51aca0582a1e951d722bbae644",
+      "locality": "Hanuman Complax",
+      "areaName": "Murari Nagar",
+      "costForTwo": "₹200 for two",
+      "cuisines": [
+        "Burgers"
+      ],
+      "avgRating": 3.8,
+      "veg": true,
+      "parentId": "51256",
+      "avgRatingString": "3.8",
+      "totalRatingsString": "3",
+      "sla": {
+        "deliveryTime": 55,
+        "lastMileTravel": 8.3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "55 mins",
+        "lastMileTravelString": "8.3 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-12-30 22:00:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "aggregatedDiscountInfoV2": {
+        
+      },
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "orderabilityCommunication": {
+        "title": {
+          
+        },
+        "subTitle": {
+          
+        },
+        "message": {
+          
+        },
+        "customIcon": {
+          
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "isNewlyOnboarded": true,
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      "context": "seo-data-9fd5af20-fa62-4cc5-808d-b673caa96871"
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/burger-club-hanuman-complax-murari-nagar-khujra-753069",
       "text": "RESTAURANT_MENU",
       "type": "WEBLINK"
     },
@@ -488,15 +678,15 @@ export const reslist=[{
       "avgRatingString": "3.8",
       "totalRatingsString": "10+",
       "sla": {
-        "deliveryTime": 49,
+        "deliveryTime": 54,
         "lastMileTravel": 8.2,
         "serviceability": "SERVICEABLE",
-        "slaString": "49 mins",
+        "slaString": "54 mins",
         "lastMileTravelString": "8.2 km",
         "iconType": "ICON_TYPE_EMPTY"
       },
       "availability": {
-        "nextCloseTime": "2023-12-28 22:00:00",
+        "nextCloseTime": "2023-12-30 22:00:00",
         "opened": true
       },
       "badges": {
@@ -557,105 +747,10 @@ export const reslist=[{
       }
     },
     "analytics": {
-      "context": "seo-data-994883d4-c33f-4e3d-b097-eb81b6f998e9"
+      "context": "seo-data-9fd5af20-fa62-4cc5-808d-b673caa96871"
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/chaska-chaap-ka-near-kamdhenu-murari-nagar-khujra-752817",
-      "text": "RESTAURANT_MENU",
-      "type": "WEBLINK"
-    },
-    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
-  },
-  {
-    "info": {
-      "id": "719590",
-      "name": "Chai Sutta Yaari",
-      "cloudinaryImageId": "7953390cdc0e565013d3bc6fcc48bd9d",
-      "locality": "Zenith Public School",
-      "areaName": "Murari Nagar",
-      "costForTwo": "₹200 for two",
-      "cuisines": [
-        "North Indian",
-        "Fast Food",
-        "Pizzas",
-        "Beverages"
-      ],
-      "avgRating": 4.3,
-      "parentId": "57171",
-      "avgRatingString": "4.3",
-      "totalRatingsString": "50+",
-      "sla": {
-        "deliveryTime": 42,
-        "lastMileTravel": 6.3,
-        "serviceability": "SERVICEABLE",
-        "slaString": "42 mins",
-        "lastMileTravelString": "6.3 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-28 22:00:00",
-        "opened": true
-      },
-      "badges": {
-        
-      },
-      "isOpen": true,
-      "aggregatedDiscountInfoV2": {
-        
-      },
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {
-            
-          },
-          "textBased": {
-            
-          },
-          "textExtendedBadges": {
-            
-          }
-        }
-      },
-      "orderabilityCommunication": {
-        "title": {
-          
-        },
-        "subTitle": {
-          
-        },
-        "message": {
-          
-        },
-        "customIcon": {
-          
-        }
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {
-            
-          },
-          "video": {
-            
-          }
-        }
-      },
-      "reviewsSummary": {
-        
-      },
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {
-        
-      }
-    },
-    "analytics": {
-      "context": "seo-data-994883d4-c33f-4e3d-b097-eb81b6f998e9"
-    },
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/chai-sutta-yaari-zenith-public-school-murari-nagar-khujra-719590",
       "text": "RESTAURANT_MENU",
       "type": "WEBLINK"
     },
@@ -676,15 +771,15 @@ export const reslist=[{
       "parentId": "445709",
       "avgRatingString": "NEW",
       "sla": {
-        "deliveryTime": 48,
+        "deliveryTime": 46,
         "lastMileTravel": 7.7,
         "serviceability": "SERVICEABLE",
-        "slaString": "48 mins",
+        "slaString": "46 mins",
         "lastMileTravelString": "7.7 km",
         "iconType": "ICON_TYPE_EMPTY"
       },
       "availability": {
-        "nextCloseTime": "2023-12-28 22:00:00",
+        "nextCloseTime": "2023-12-30 22:00:00",
         "opened": true
       },
       "badges": {
@@ -744,7 +839,7 @@ export const reslist=[{
       }
     },
     "analytics": {
-      "context": "seo-data-994883d4-c33f-4e3d-b097-eb81b6f998e9"
+      "context": "seo-data-9fd5af20-fa62-4cc5-808d-b673caa96871"
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/desi-bite-chinese-hut-station-nagar-murari-nagar-khujra-753232",
@@ -752,101 +847,5 @@ export const reslist=[{
       "type": "WEBLINK"
     },
     "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
-  },
-  {
-    "info": {
-      "id": "758129",
-      "name": "Pizza Kign Cafe",
-      "cloudinaryImageId": "414ed51cb369d06a40abe77651eb1acb",
-      "locality": "Mark Plaza",
-      "areaName": "Murari Nagar",
-      "costForTwo": "₹200 for two",
-      "cuisines": [
-        "Pizzas",
-        "Fast Food",
-        "Beverages"
-      ],
-      "avgRating": 3.8,
-      "veg": true,
-      "parentId": "448287",
-      "avgRatingString": "3.8",
-      "totalRatingsString": "8",
-      "sla": {
-        "deliveryTime": 48,
-        "lastMileTravel": 8.3,
-        "serviceability": "SERVICEABLE",
-        "slaString": "48 mins",
-        "lastMileTravelString": "8.3 km",
-        "iconType": "ICON_TYPE_EMPTY"
-      },
-      "availability": {
-        "nextCloseTime": "2023-12-28 22:00:00",
-        "opened": true
-      },
-      "badges": {
-        
-      },
-      "isOpen": true,
-      "aggregatedDiscountInfoV2": {
-        
-      },
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {
-            
-          },
-          "textBased": {
-            
-          },
-          "textExtendedBadges": {
-            
-          }
-        }
-      },
-      "orderabilityCommunication": {
-        "title": {
-          
-        },
-        "subTitle": {
-          
-        },
-        "message": {
-          
-        },
-        "customIcon": {
-          
-        }
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {
-            
-          },
-          "video": {
-            
-          }
-        }
-      },
-      "reviewsSummary": {
-        
-      },
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "isNewlyOnboarded": true,
-      "restaurantOfferPresentationInfo": {
-        
-      }
-    },
-    "analytics": {
-      "context": "seo-data-994883d4-c33f-4e3d-b097-eb81b6f998e9"
-    },
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/pizza-kign-cafe-mark-plaza-murari-nagar-khujra-758129",
-      "text": "RESTAURANT_MENU",
-      "type": "WEBLINK"
-    },
-    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
   }
-  ]
+]
