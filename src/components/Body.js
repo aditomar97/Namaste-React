@@ -2,6 +2,7 @@ import RestaurantCard from "./RestaurantCard";
 import { reslist } from "../utils/mockDATA";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { Link, NavLink } from "react-router-dom";
 
 const Body = () => {
   const [listOfRestaurants, setlistOfRestaurants] = useState([]);
@@ -33,7 +34,6 @@ const Body = () => {
     setSearch(e.target.value);
   };
   const SearchList = () => {
-    console.log("Hi")
     const filteredList = listOfRestaurants.filter((el) => {
       return el.info.name.toLowerCase().includes(search.toLocaleLowerCase());
     });
@@ -82,7 +82,7 @@ const Body = () => {
 
       <div className="res-container">
         {filteredRestaurant.map((data) => {
-          return <RestaurantCard resData={data} key={data.info.id} />;
+          return <Link key={data.info.id} to={`/restaurants/${data.info.id}`}> <RestaurantCard resData={data}  /></Link>;
         })}
       </div>
     </div>
