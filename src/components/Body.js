@@ -14,17 +14,17 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.2041357&lng=77.9053182&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.5618471&lng=77.3665377&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
     const res = await data.json();
-    // console.log(
-    //   res?.data?.cards[3]?.card.card.gridElements.infoWithStyle.restaurants
-    // );
+    console.log(
+      res?.data?.cards[4]?.card.card.gridElements.infoWithStyle.restaurants
+    );
     setlistOfRestaurants(
-      res?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      res?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
     setFilteredRestaurant(
-      res?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      res?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
 

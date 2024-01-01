@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { LOGO_URL } from "../utils/constants";
+import {NavLink} from 'react-router-dom'
 
 const Header = () => {
   const [active,setActive]=useState(true)
@@ -17,9 +18,9 @@ const Header = () => {
         </div>
         <div className="nav-items">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact Us</li>
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/about">About</NavLink></li>
+            <li><NavLink to="/contact">Contact Us</NavLink></li>
             <li>Cart</li>
             <button className="login" onClick={LoginHandler}>{active?"Login":"Logout"}</button>
           </ul>
