@@ -98,3 +98,21 @@ cursor: pointer;
   padding: 10px;
   border: 1px solid black;
 }
+.status{
+  display: flex;
+}
+.online{
+  width: 10px;
+  height: 10px;
+  border: 1px solid green;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.offline{
+  width: 10px;
+  height: 10px;
+  border: 1px solid red;
+  background-color: red;
+  border-radius: 50%;
+}
