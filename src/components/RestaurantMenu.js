@@ -18,11 +18,11 @@ function RestaurantMenu() {
 
   return (
     <div className="menu">
-      <h1>{name}</h1>
+     <h1>{name}</h1>
       <p>
         {cuisines.join(",")}-{costForTwoMessage}
       </p>
-      <h2>Menu</h2>
+      <h1 className=" font-semibold">Menu</h1>
       <ul>
         {(itemCards || categories[0].itemCards).map((item) => {
           return (
