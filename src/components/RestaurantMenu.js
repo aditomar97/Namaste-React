@@ -1,38 +1,48 @@
-
 import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
+import RestaurantCategory from "./RestaurantCategory";
+import { useState } from "react";
 
 function RestaurantMenu() {
-  const { resId } = useParams();
-  const  resInfo  = useRestaurantMenu(resId);
+
+  const { resId, avrRating } = useParams();
+  const [showIndex,setShowIndex]=useState(null)
+  const [showItems,setShowItems]=useState(true)
+  const resInfo = useRestaurantMenu(resId);
 
   if (resInfo === null) return <Shimmer />;
   const { name, cuisines, costForTwoMessage } =
     resInfo.cards[0]?.card?.card?.info;
-  console.log(
-    resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card
-  );
+  // console.log(resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR);
   const { itemCards, categories } =
     resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
 
+  const Categories =
+    resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR.cards.filter((c) => {
+      return (
+        c.card.card["@type"] ===
+        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+      );
+    });
+
+     
+  console.log("categorise", Categories);
   return (
-    <div className="menu">
-     <h1>{name}</h1>
-      <p>
+    <div className="text-center">
+      <h2 className="font-bold my-6 text-2xl">{name}</h2>
+      <p className="font-bold text-lg">
         {cuisines.join(",")}-{costForTwoMessage}
       </p>
-      <h1 className=" font-semibold">Menu</h1>
-      <ul>
-        {(itemCards || categories[0].itemCards).map((item) => {
-          return (
-            <li key={item.card.info.id}>
-              {item.card.info.name}-Rs{" "}
-              {item.card.info.price / 100 || item.card.info.defaultPrice / 100}{" "}
-            </li>
-          );
-        })}
-      </ul>
+      {Categories.map((category,index) => (
+        <RestaurantCategory
+          key={category?.card?.card.title}
+          data={category?.card?.card}
+          setShowIndex={()=>setShowIndex(index)}
+          showItems={index===showIndex && showItems}
+       setShowItems={setShowItems}
+        />
+      ))}
     </div>
   );
 }

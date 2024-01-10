@@ -11,13 +11,13 @@ const useRestaurant = (string) => {
     const data = await fetch(string);
     const res = await data.json();
     console.log(
-        res?.data?.cards[4]?.card.card.gridElements.infoWithStyle.restaurants
+        res?.data?.cards[5]?.card.card.gridElements.infoWithStyle.restaurants
       );
     setlistOfRestaurants(
-        res?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+        res?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
       );
       setFilteredRestaurant(
-        res?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+        res?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
       );
   };
 

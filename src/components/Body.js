@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { pureVegRestaurant } from "./RestaurantCard";
 import { useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -36,6 +36,8 @@ const Body = () => {
   if (onlineStatus === false) {
     return <h1>You are Offline , please check your internet Connection</h1>;
   }
+  
+  const PureVegRestaurant=pureVegRestaurant(RestaurantCard)
 
   return listOfRestaurants.length === 0 ? (
     <Shimmer />
@@ -68,9 +70,10 @@ const Body = () => {
       <div className="md:flex flex-wrap my-4 ">
         {filteredRestaurant.map((data) => {
           return (
-            <Link key={data.info.id} to={`/restaurants/${data.info.id}`}>
-              {" "}
-              <RestaurantCard resData={data} />
+            <Link key={data.info.id} to={`/restaurants/${data.info.id}/${data.info.avgRating}`}>
+              {data.info.veg?<PureVegRestaurant resData={data}/>: <RestaurantCard resData={data}  />}
+             
+              
             </Link>
           );
         })}
