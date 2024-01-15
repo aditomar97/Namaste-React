@@ -1,10 +1,11 @@
 import RestaurantCard, { pureVegRestaurant } from "./RestaurantCard";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { SWIGGY_URL } from "../utils/constants";
 import useRestaurant from "../utils/useRestaurant";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import { StarContext } from "../utils/StarContext";
 const Body = () => {
   const [search, setSearch] = useState("");
 
@@ -16,10 +17,12 @@ const Body = () => {
   } = useRestaurant(SWIGGY_URL);
 
   const onlineStatus = useOnlineStatus();
-
+ 
   const SearchHandler = (e) => {
     setSearch(e.target.value);
   };
+
+ 
   const SearchList = () => {
     const filteredList = listOfRestaurants.filter((el) => {
       return el.info.name.toLowerCase().includes(search.toLocaleLowerCase());
@@ -37,14 +40,19 @@ const Body = () => {
     return <h1>You are Offline , please check your internet Connection</h1>;
   }
   
-  const PureVegRestaurant=pureVegRestaurant(RestaurantCard)
+  const StoreHandler=(data)=>{
+   
+    localStorage.setItem("avgRating",data)
+  }
+
+  const PureVegRestaurant = pureVegRestaurant(RestaurantCard);
 
   return listOfRestaurants.length === 0 ? (
     <Shimmer />
   ) : (
     <div className="md:m-1 ">
       <div className=" md:flex ">
-        <div className=" inline-block md:flex" >
+        <div className=" inline-block md:flex">
           <input
             className="border m-1 p-2  border-black"
             type="text"
@@ -64,16 +72,22 @@ const Body = () => {
           }}
         >
           Top Rated Restuarnts
-      </button>
+        </button>
       </div>
 
       <div className="md:flex flex-wrap my-4 ">
         {filteredRestaurant.map((data) => {
           return (
-            <Link key={data.info.id} to={`/restaurants/${data.info.id}/${data.info.avgRating}`}>
-              {data.info.veg?<PureVegRestaurant resData={data}/>: <RestaurantCard resData={data}  />}
-             
-              
+            <Link
+              key={data.info.id}
+               to={`/restaurants/${data.info.id}`}
+              onClick={()=>StoreHandler( data.info.avgRating)}
+            >
+              {data.info.veg ? (
+                <PureVegRestaurant resData={data} />
+              ) : (
+                <RestaurantCard resData={data} />
+              )}
             </Link>
           );
         })}

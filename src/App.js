@@ -8,7 +8,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
-
+import StarProvider from "./utils/StarContext";
 
 // import Grocery from "./components/Grocery";
 
@@ -16,10 +16,12 @@ const Grocery = lazy(() => import("./components/Grocery"));
 const About = lazy(() => import("./components/About"));
 const AppLayout = () => {
   return (
-    <div className="app">
-      <Header />
-      <Outlet />
-    </div>
+   <StarProvider>
+      <div className="app">
+        <Header />
+        <Outlet />
+      </div>
+      </StarProvider>
   );
 };
 
@@ -46,8 +48,8 @@ const appRoute = createBrowserRouter([
         element: <Grocery />,
       },
       {
-        path: "/restaurants/:resId/:avrRating",
-        element:<RestaurantMenu />,
+        path: "/restaurants/:resId",
+        element: <RestaurantMenu />,
       },
     ],
     errorElement: <Error />,
